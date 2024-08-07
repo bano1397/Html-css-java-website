@@ -21,7 +21,7 @@
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 		<link href="css/tiny-slider.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
-		<title>Furni Free Bootstrap 5 Template for Furniture and Interior Design Websites by Untree.co </title>
+		<title>TecTools</title>
 	</head>
 
 	<body>
@@ -199,10 +199,82 @@
 		</footer>
 		<!-- End Footer Section -->	
 
+		<div id="whatsapp-chat" class="hidden">
+			<div class="chat-header">
+				<img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
+				<div class="chat-info">
+					<div class="chat-name">TecTools</div>
+					<div class="chat-status">Typically replies within minutes</div>
+				</div>
+			</div>
+			<div class="chat-body">
+				<div class="message">Any questions related to Our Services? Available 24/7</div>
+			</div>
+			<div class="chat-footer">
+				<a href="https://wa.me/03213181197" target="_blank" class="whatsapp-button">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png" alt="WhatsApp Icon">
+					WhatsApp Us
+				</a>
+				<div class="online-status">Online</div>
+			</div>
+		</div>
+		<button id="toggle-whatsapp-chat" class="whatsapp-toggle-button">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png" alt="WhatsApp Icon">
+		</button>
+	
+		<div id="telegram-chat" class="hidden">
+			<div class="chat-header">
+				<img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
+				<div class="chat-info">
+					<div class="chat-name">TecTools</div>
+					<div class="chat-status">Typically replies within minutes</div>
+				</div>
+			</div>
+			<div class="chat-body">
+				<div class="message">Any questions related to Our Services? Available 24/7</div>
+			</div>
+			<div class="chat-footer">
+				<a href="https://t.me/Sohaib6537" target="_blank" class="telegram-button">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Icon">
+					Telegram Us
+				</a>
+				<div class="online-status">Online</div>
+			</div>
+		</div>
+		<button id="toggle-telegram-chat" class="telegram-toggle-button">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Icon">
+		</button>
+		<script>document.getElementById('toggle-whatsapp-chat').addEventListener('click', function() {
+			var chatWidget = document.getElementById('whatsapp-chat');
+			if (chatWidget.classList.contains('hidden')) {
+				chatWidget.classList.remove('hidden');
+				chatWidget.style.display = 'block';
+			} else {
+				chatWidget.classList.add('hidden');
+				chatWidget.style.display = 'none';
+			}
+		});
+		
+		document.getElementById('toggle-telegram-chat').addEventListener('click', function() {
+			var chatWidget = document.getElementById('telegram-chat');
+			if (chatWidget.classList.contains('hidden')) {
+				chatWidget.classList.remove('hidden');
+				chatWidget.style.display = 'block';
+			} else {
+				chatWidget.classList.add('hidden');
+				chatWidget.style.display = 'none';
+			}
+		});
+		</script>
+
 
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/custom.js"></script>
-	</body>
 
+		
+	</body>
+          
 </html>
+
+
